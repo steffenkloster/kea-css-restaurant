@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Restaurant KEA</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Restaurant KEA</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contact">
+      <div>
+        <div>
+          <img
+            src="/css-restaurant/assets/images/map.jpg"
+            alt="Map showing the location of Restaurant KEA"
+          />
+        </div>
+      </div>
+
+      <div>
+        <section aria-labelledby="contact-info-title">
+          <h2 id="contact-info-title" class="sr-only">Contact Information</h2>
+          <address>
+            <p>Guldbergsgade 29N<br />2200 Copenhagen</p>
+            <p>Phone no.: <a href="tel:+4520825370">20 82 53 70</a></p>
+            <p>
+              E-mail:
+              <a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a>
+            </p>
+          </address>
+        </section>
+
+        <section aria-labelledby="contact-form-title">
+          <h2 id="contact-form-title" class="sr-only">Contact Form</h2>
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Contact form</legend>
+
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="phone">Phone no.</label>
+              <input type="tel" id="phone" name="phone" />
+
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="persons">Persons</label>
+              <input
+                type="number"
+                id="persons"
+                name="persons"
+                min="1"
+                value="2"
+                required
+              />
+
+              <label for="datetime">Date and time</label>
+              <input
+                type="datetime-local"
+                id="datetime"
+                name="datetime"
+                required
+              />
+
+              <label for="message">Further information</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+
+              <button type="submit">Send</button>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 KEA Development</p>
+    </footer>
+  </body>
+</html>
